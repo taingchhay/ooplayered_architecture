@@ -3,7 +3,7 @@ import 'package:lms_layered_architecture_example/model/order_item.dart';
 import 'package:lms_layered_architecture_example/model/user.dart';
 
 class OrderService {
-  final List<Order> orders = [];
+  final List<Order> orders = [];//order confirm
 
   Order placeOrder({required User customer, required List<OrderItem> items}) {
     if (items.isEmpty) {

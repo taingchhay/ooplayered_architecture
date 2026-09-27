@@ -5,8 +5,8 @@ class Product {
   final String id;
   final String name;
   final Category category;
-  final User addedBy;
-
+  final String image;
+  // final User addedBy;
   double _price;
   int _stock;
 
@@ -16,7 +16,8 @@ class Product {
     required double price,
     required int stock,
     required this.category,
-    required this.addedBy,
+    required this.image,
+    // required this.addedBy,
   })  : _price = price,
         _stock = stock;
 
@@ -31,4 +32,12 @@ class Product {
     }
     _stock -= quantity;
   }
+
+  // @override
+  // String toString() {
+  //   return "Product Name :" + this.name + "\n"
+  //     "Price" + this.price.toString() +'\n' "Product Stock :" + this.stock.toString()
+  //     + "\n" + this.category.name
+  //     ;
+  // }
 }
